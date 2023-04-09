@@ -1,3 +1,4 @@
+import homeWork2.EvenAndOddNumbers;
 import homeWork2.Fibonacci;
 import homeWork2.SumMinMax;
 import homework1.*;
@@ -20,12 +21,15 @@ public class Main {
         // number.findTheSumOfTheNumbersBetweenTwoNumbers();
 
 
-       // Fibonacci arr =  new Fibonacci();
-      //  arr.fillTheArrayWithFibonacciNumbers();
+        // Fibonacci arr = new Fibonacci();
+        // arr.fillTheArrayWithFibonacciNumbers(10);
 
 
-        SumMinMax array = new SumMinMax();
-        array.findSumMinAndMaxElementsInArray();
+        // SumMinMax array = new SumMinMax();
+        // array.findSumMinAndMaxElementsInArray(10);
+
+        // EvenAndOddNumbers sum = new EvenAndOddNumbers();
+        //  sum.differenceBetweenSumOfEvenAndOddNumbers();
 
 
     }

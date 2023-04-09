@@ -3,8 +3,8 @@ package homeWork2;
 import java.util.Random;
 
 public class SumMinMax {
-    public void findSumMinAndMaxElementsInArray() {
-        int[] array = new int[10];
+    public void findSumMinAndMaxElementsInArray(int arrayLenght) {
+        int[] array = new int[arrayLenght];
         Random rnd = new Random();
 
         for (int i = 0; i < array.length; i++) {
