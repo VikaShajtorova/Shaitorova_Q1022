@@ -1,4 +1,4 @@
-package homework1;
+package homeWork1;
 
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class EnterNumber {
         System.out.print("Enter the second number: ");
         int secondNumber = scanner.nextInt();
         if (firstNumber >= secondNumber) {
-            System.out.println("Error: первое число не может быть меньше или равно второму");
+            System.out.println("Error: первое число не может быть больше или равно второму");
         } else {
             int sum = 0;
             for (int x = firstNumber; x <= secondNumber; x++) {

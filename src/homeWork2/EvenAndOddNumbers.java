@@ -1,10 +1,12 @@
 package homeWork2;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class EvenAndOddNumbers {
     public void differenceBetweenSumOfEvenAndOddNumbers() {
         int[] array = {2, 4, 6, 3, 8, 1, 2, 9};
+        System.out.println(Arrays.toString(array));
 
         int evenSum = 0;
         int oddSum = 0;
