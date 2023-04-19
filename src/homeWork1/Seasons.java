@@ -1,6 +1,5 @@
-package homework1;
+package homeWork1;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Seasons {

@@ -1,7 +1,7 @@
-import homeWork2.EvenAndOddNumbers;
-import homeWork2.Fibonacci;
-import homeWork2.SumMinMax;
-import homework1.*;
+import company.DIRECTOR;
+import company.Employee;
+import company.PROFESSION;
+import company.Worker;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,18 +18,69 @@ public class Main {
         // word.theUserEntersTheWord();
 
         // EnterNumber number = new EnterNumber();
-        // number.findTheSumOfTheNumbersBetweenTwoNumbers();
+        //number.findTheSumOfTheNumbersBetweenTwoNumbers();
 
 
-        // Fibonacci arr = new Fibonacci();
-        // arr.fillTheArrayWithFibonacciNumbers(10);
+        //Fibonacci arr = new Fibonacci();
+        //arr.fillTheArrayWithFibonacciNumbers(10);
 
 
-        // SumMinMax array = new SumMinMax();
-        // array.findSumMinAndMaxElementsInArray(10);
+        //SumMinMax array = new SumMinMax();
+        //array.findSumMinAndMaxElementsInArray(10);
 
-        // EvenAndOddNumbers sum = new EvenAndOddNumbers();
-        //  sum.differenceBetweenSumOfEvenAndOddNumbers();
+        //EvenAndOddNumbers sum = new EvenAndOddNumbers();
+        // sum.differenceBetweenSumOfEvenAndOddNumbers();
+
+
+       /* int[] arr = {6, 9, 4, 38, 45, 98, 105};
+        CreateClassArray classArray = new CreateClassArray();
+        classArray.printSortArray(arr);
+        classArray.printMaxValue(arr);
+        classArray.printElement(arr, 5);*/
+
+       /* USER user = USER.USER1;
+        user.printNameAndLastname();
+        user.printUserInfo();
+        user.upAge(5);*/
+
+       /* CreateClassContainingConstructor book = new CreateClassContainingConstructor();
+        CreateClassContainingConstructor book1 = new CreateClassContainingConstructor("Ход Королевы","Уолтер Тевис",2020);
+        CreateClassContainingConstructor book2 = new CreateClassContainingConstructor("Ход Королевы","Уолтер Тевис","99-55-825",150,1852);
+        book2.printBookInfo();
+        book2.publication();*/
+
+       /* USER user = USER.USER2;
+        user.printUserInfo();
+        user.upAge(5);
+        */
+
+      /*  CreateMethodDeprecated year = new CreateMethodDeprecated();
+        year.findOutTheYearOfAdmissionToSchool(2023);*/
+
+       /*CreateClassWithOverloadedMethods books = new CreateClassWithOverloadedMethods();
+        System.out.println(books.book("Ход королевы","Уолтер Тевис"));
+        System.out.println(books.book(500)+" "+"страниц");*/
+
+      /*  IdenticalClasses test = new IdenticalClasses();
+        test.printClass();
+
+
+        homeWork3_1.IdenticalClasses test1 = new homeWork3_1.IdenticalClasses();
+        test1.printClass();*/
+
+
+        /*USER user = USER.USER2;
+        user.printNameAndLastname();
+        user.printUserInfo();
+        user.upAge(6);*/
+
+        Employee worker1 = new Worker(2020,2023);
+        worker1.printSalary();
+        System.out.println("З/п рабочего: "+worker1.printSalary());
+        Employee director1 = new DIRECTOR(2010,2023);
+       director1.printSalary();
+        System.out.println("З/п директора: "+director1.printSalary());
+
 
 
     }
