@@ -1,25 +1,54 @@
 package company;
 
-public abstract class Employee {
-    int yearEmployment;
-    int currentYear;
-    int experience;
-    int base_rate = 40;
+import java.util.Arrays;
 
-    public abstract PROFESSION getPROFESSION();
+public abstract class Employee extends Person {
+    private int yearEmployment;
+    private int currentYear;
+    public int experience;
+    final int base_rate = 40  ;
+    Employee[] employees;
+    protected PROFESSION profession;
 
-    public Employee(int yearEmployment, int currentYear) {
+    public Employee(String name, String surname, int yearEmployment, int currentYear) {
+        super(name, surname);
         this.yearEmployment = yearEmployment;
         this.currentYear = currentYear;
-        this.experience = currentYear-yearEmployment;
+        setProfession();
+
     }
 
-      public int getExperience() {
-        return experience;
+    public void addWorker(Employee employee) {
+        if (employees == null) {
+            employees = new Employee[1];
+            employees[0] = employee;
+        } else {
+            employees = Arrays.copyOf(employees, employees.length + 1);
+            employees[employees.length - 1] = employee;
+        }
     }
+
+    public abstract void setProfession();
+
+
+    public int getExperience() {
+        return experience=currentYear-yearEmployment;
+    }
+
 
     public double printSalary() {
-        return base_rate * getExperience() * getPROFESSION().getRatio();
+        return base_rate * getExperience() *profession.getRatio();
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", experience="+ experience+
+                ", profession="+profession+
+                ", salary="+ printSalary()+
+                '}';
     }
 }
 

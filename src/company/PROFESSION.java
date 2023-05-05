@@ -2,7 +2,11 @@ package company;
 
 public enum PROFESSION {
     DIRECTOR(2.6),
-    WORKER(2.0);
+    DIRECTOR2(2.3),
+    WORKER(2.0),
+    ACCOUNTANT(2.0),
+    SECRETARY(2.0),
+    ENGINEER(2.0);
     private double ratio;
 
     PROFESSION(double ratio) {
