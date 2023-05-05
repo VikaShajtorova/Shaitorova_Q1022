@@ -1,4 +1,4 @@
-package company;
+package worker4_company;
 
 import java.util.Arrays;
 

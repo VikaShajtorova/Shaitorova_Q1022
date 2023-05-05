@@ -1,4 +1,4 @@
-package company;
+package worker4_company;
 
 public class Person {
     protected String name;

@@ -1,4 +1,4 @@
-package company;
+package worker4_company;
 
 import java.util.Arrays;
 
@@ -6,7 +6,7 @@ public abstract class Employee extends Person {
     private int yearEmployment;
     private int currentYear;
     public int experience;
-    final int base_rate = 40  ;
+    final int base_rate = 40;
     Employee[] employees;
     protected PROFESSION profession;
 
@@ -16,6 +16,11 @@ public abstract class Employee extends Person {
         this.currentYear = currentYear;
         setProfession();
 
+    }
+
+    public Employee(String name, String surname, PROFESSION profession) {
+        super(name, surname);
+        this.profession = profession;
     }
 
     public void addWorker(Employee employee) {
@@ -32,12 +37,12 @@ public abstract class Employee extends Person {
 
 
     public int getExperience() {
-        return experience=currentYear-yearEmployment;
+        return experience = currentYear - yearEmployment;
     }
 
 
     public double printSalary() {
-        return base_rate * getExperience() *profession.getRatio();
+        return base_rate * getExperience() * profession.getRatio();
     }
 
     @Override
@@ -45,9 +50,9 @@ public abstract class Employee extends Person {
         return "Employee{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", experience="+ experience+
-                ", profession="+profession+
-                ", salary="+ printSalary()+
+                ", experience=" + experience +
+                ", profession=" + profession +
+                ", salary=" + printSalary() +
                 '}';
     }
 }
